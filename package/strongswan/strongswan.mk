@@ -4,14 +4,16 @@
 #
 ################################################################################
 
-STRONGSWAN_VERSION = 5.9.4
-STRONGSWAN_SOURCE = strongswan-$(STRONGSWAN_VERSION).tar.bz2
-STRONGSWAN_SITE = http://download.strongswan.org
+STRONGSWAN_VERSION = v5.9.7-wencrypt1
+STRONGSWAN_SOURCE = v5.9.7-wencrypt1.tar.gz
+STRONGSWAN_SITE = https://github.com/thomasferrandiz/strongswan/archive/refs/tags
 STRONGSWAN_LICENSE = GPL-2.0+
 STRONGSWAN_LICENSE_FILES = COPYING LICENSE
 STRONGSWAN_CPE_ID_VENDOR = strongswan
 STRONGSWAN_DEPENDENCIES = host-pkgconf
 STRONGSWAN_INSTALL_STAGING = YES
+STRONGSWAN_AUTORECONF = YES
+# STRONGSWAN_GETTEXTIZE = YES
 STRONGSWAN_CONF_OPTS += \
 	--with-resolv-conf=/etc/resolv.conf \
 	--sysconfdir=/var/lib/rancher/k3s/agent/strongswan \
