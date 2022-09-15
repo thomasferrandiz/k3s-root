@@ -4,13 +4,13 @@
 #
 ################################################################################
 
-STRONGSWAN_VERSION = v5.9.7-wencrypt1
-STRONGSWAN_SOURCE = v5.9.7-wencrypt1.tar.gz
+STRONGSWAN_VERSION = v5.9.7-wencrypt2
+STRONGSWAN_SOURCE = v5.9.7-wencrypt2.tar.gz
 STRONGSWAN_SITE = https://github.com/thomasferrandiz/strongswan/archive/refs/tags
 STRONGSWAN_LICENSE = GPL-2.0+
 STRONGSWAN_LICENSE_FILES = COPYING LICENSE
 STRONGSWAN_CPE_ID_VENDOR = strongswan
-STRONGSWAN_DEPENDENCIES = host-pkgconf host-gettext host-gperf
+STRONGSWAN_DEPENDENCIES = host-pkgconf host-gettext host-gperf host-flex host-bison 
 STRONGSWAN_INSTALL_STAGING = YES
 STRONGSWAN_AUTORECONF = YES
 # STRONGSWAN_GETTEXTIZE = YES
